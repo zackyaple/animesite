@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
+		<style>
+			#header {
+				width: 100%;
+				position: fixed;
+				top: 0;
+				text-align: center;
+				display: inline;
+				transition: top 0.3s;
+			}
+			#header a {
+				background: #000033; 
+				border-left: 1px solid #00ffff;
+				border-radius: 25px;
+				border-right: 1px solid #00ffff;
+				border-bottom: 1px solid #00ffff;
+				color: #ffffff;
+				text-decoration: none;
+			}
+			#header a:hover {
+				border-radius: 25px;
+				border: 1px solid #000099;
+				margin: 0;
+				padding: 0;
+				background-color: #000066;
+				color: white;
+			}
+
+			.flex-container {
+				display: flex;
+				flex-wrap: wrap;
+				margin: auto;
+				background-color: black;
+				justify-content: center;
+			}
+			.flex-container div nav {
+				border-top: 1px solid #00ffff;
+				background-color: #000033;
+				border-left: 1px solid #00ffff;
+				border-radius: 25px;
+				border-right: 1px solid #00ffff;
+				border-bottom: 1px solid #00ffff;
+				color: white;
+				list-style-type: none;
+			}
+
+			.flex-container div nav ul {
+				color: white;
+				list-style-type: none;
+			}
+			.flex-container div nav ul a {
+				text-align: center;
+				color: white;
+			}
+			.flex-container div p {
+				text-align: center;
+				color: white;
+			}
+			img {
+				border: 1px solid #00ffff;
+			}
+		</style>
+		</head>
+	<body style="background-color: black;">
+		<div id="header" align="center">
+			<a href="anime-site.html">Anime</a>
+			<a href="movie-site.html">Movies</a>
+			<a href="kid-movie-site.html">Kids Movies</a>
+			<a href="show-site.html">Shows</a>
+			<a href="kid-show-site.html">Kids Shows</a>
+		</div>
+
+		<div  style="text-align: center;" width:"758" height:"140">
+			<img src="images/black-lagoon-banner.jpg" alt="">	
+		</div>
+		<div class="flex-container" style="flex-grow: 100%;">
+			<div style="margin: auto; text-align: center;">
+				<nav>
+					<p>Season 1</p>
+					<ul>
+						<li><a href="black-lagoon-video1.html">Episode 1</a></li>
+						<li><a href="black-lagoon-video2.html">Episode 2</a></li>
+						<li><a href="black-lagoon-video3.html">Episode 3</a></li>
+						<li><a href="black-lagoon-video4.html">Episode 4</a></li>
+						<li><a href="black-lagoon-video5.html">Episode 5</a></li>
+						<li><a href="black-lagoon-video6.html">Episode 6</a></li>
+						<li><a href="black-lagoon-video7.html">Episode 7</a></li>
+						<li><a href="black-lagoon-video8.html">Episode 8</a></li>
+						<li><a href="black-lagoon-video9.html">Episode 9</a></li>
+						<li><a href="black-lagoon-video10.html">Episode 10</a></li>
+						<li><a href="black-lagoon-video11.html">Episode 11</a></li>
+						<li><a href="black-lagoon-video12.html">Episode 12</a></li>
+
+					</ul>
+				</nav>
+			</div>
+		<div>
+				<img src="images/black-lagoon-page.jpg" style="text-align: right;" width="1000" height="auto">
+			</div>
+			<div style="margin: auto; text-align: center;">
+				<nav>
+					<p>Season 2</p>
+					<ul>
+						<li><a href="black-lagoon-video13.html">Episode 1</a></li>
+						<li><a href="black-lagoon-video14.html">Episode 2</a></li>
+						<li><a href="black-lagoon-video15.html">Episode 3</a></li>
+						<li><a href="black-lagoon-video16.html">Episode 4</a></li>
+						<li><a href="black-lagoon-video17.html">Episode 5</a></li>
+						<li><a href="black-lagoon-video18.html">Episode 6</a></li>
+						<li><a href="black-lagoon-video19.html">Episode 7</a></li>
+						<li><a href="black-lagoon-video20.html">Episode 8</a></li>
+						<li><a href="black-lagoon-video21.html">Episode 9</a></li>
+						<li><a href="black-lagoon-video22.html">Episode 10</a></li>
+						<li><a href="black-lagoon-video23.html">Episode 11</a></li>
+						<li><a href="black-lagoon-video24.html">Episode 12</a></li>
+					</ul>
+				</nav>
+			</div>
+	
+			<div>
+				<p>Okajima Rokuro - now known almost exclusively as 'Rock' - was once a typical, put-upon Japanese businessman. Then, on a routine business trip, he was kidnapped and ransomed by the Lagoon Company: a band of mercenary pirates operating out of the crime-riddled city of Roanapur. Abandoned by his bosses, he joined the Lagoon Company. Now he must try and stay afloat amongst the ever-shifting politics of the criminal underworld, while simultaneously avoiding death at the hands of his quick-tempered, gun-toting co-worker, 'Two Hand' Revy. 
+				</p>
+			</div>
+		</div>
+		<script>
+		var prevScrollpos = window.pageYOffset;
+		window.onscroll = function() {
+		var currentScrollPos = window.pageYOffset;
+			if (prevScrollpos > currentScrollPos) {
+				document.getElementById("header").style.top = "0";
+			} else {
+				document.getElementById("header").style.top = "-150px";
+			}
+			prevScrollpos = currentScrollPos;
+		}
+		</script>
+	</body>
+</html>
+

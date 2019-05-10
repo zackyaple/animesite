@@ -1,0 +1,27 @@
+#header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  text-align: center;
+  display: inline;
+  transition: top 0.5s;
+}
+#header a {
+  background: #000033; 
+  border-left: 1px solid #00ffff;
+  border-radius: 25px;
+  border-right: 1px solid #00ffff;
+  border-bottom: 1px solid #00ffff;
+  color: #ffffff;
+  text-decoration: none;
+}
+#header a:hover {
+  border-radius: 25px;
+  border: 1px solid #000099;
+  margin: 0;
+  padding: 0;
+  background-color: #000066;
+  color: white;
+}
+
+
